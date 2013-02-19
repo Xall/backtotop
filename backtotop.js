@@ -1,9 +1,8 @@
 window.addEvent('domready', function() {
     var body = $$('body')[0];
-    // Button container with text and link to top
+    // Button container with text
     var container = new Element('a',{
         html: '^<br>Back to top',
-        href: '#',
     });
     // Set ID for css and MooTools 1.2.5 compatibility
     container.set('id', 'backtotop');
@@ -12,9 +11,10 @@ window.addEvent('domready', function() {
     // Inject button before the closing body tag
     container.inject(body);
 
-    // EVENT - Fade out on click
+    // EVENT - Fade out on click and scroll up
     container.addEvent('click', function () {
         container.fade('out');
+        window.scroll();
     });
 
     // EVENT - Fade in on scrolling down, fade out on top
