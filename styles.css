@@ -1,0 +1,25 @@
+p{
+    width: 200px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 0 0;
+    border-bottom: 1px solid #CECECE;
+}
+
+#backtotop{
+    background-color: #333333;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    text-decoration: initial;
+    border-radius: 10px;
+}
+
+#backtotop:hover{
+    background-color: #555555;
+}
