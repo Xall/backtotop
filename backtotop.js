@@ -5,7 +5,6 @@ window.addEvent('domready', function() {
         href: '#',
     });
     container.inject(body);
-    var myFx = new Fx();
 
     container.addEvent('click', function () {
         container.fade('out');
